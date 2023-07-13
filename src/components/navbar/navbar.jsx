@@ -1,6 +1,7 @@
 import { Stack, Box } from '@mui/material'
 import { Link } from 'react-router-dom'
-import { logo } from '../../constants'
+
+
 import { colors } from '../../constants/colors'
 import { Searchbar } from '../'
 
@@ -13,8 +14,8 @@ const Navbar = () => {
 			p={2}
 			sx={{ position: 'sticky', top: 0, zIndex: 999, background: colors.primary }}
 		>
-			<Link to={'/'}>
-				<img src={logo} alt='logo' height={30} />
+			<Link to={'/'} style={{fontSize: "40px", color: "", fontWeight: "700"}}>
+				JA.TUBE
 			</Link>
 			<Searchbar />
 			<Box />
